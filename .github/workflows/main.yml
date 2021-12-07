@@ -1,0 +1,91 @@
+name: Get Wordlists
+
+on:
+  schedule:
+  - cron: "0 7 * * *"
+  workflow_dispatch:
+
+jobs:
+  download_and_push_wordlists:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: SecLists (https://github.com/danielmiessler/SecLists)
+        run: |
+          rm -rf SecLists
+          git clone --depth=1 https://github.com/danielmiessler/SecLists
+          rm -rf SecLists/.git
+
+      - name: PayloadsAllTheThings (https://github.com/swisskyrepo/PayloadsAllTheThings)
+        run: |
+          rm -rf PayloadsAllTheThings
+          git clone --depth=1 https://github.com/swisskyrepo/PayloadsAllTheThings
+          rm -rf PayloadsAllTheThings/.git
+
+      - name: Partial Assetnote Wordlists (https://wordlists-cdn.assetnote.io/data/ < 100MB)
+        run: | 
+          rm -rf Assetnote
+          mkdir Assetnote
+          wget -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/data/ -nH
+          mv data Assetnote
+          
+      - name: Honoki's XXE Payloads (https://gist.github.com/honoki/d7035c3ccca1698ec7b541c77b9410cf)
+        run: |
+          rm -rf XXE
+          git clone --depth=1 https://gist.github.com/honoki/d7035c3ccca1698ec7b541c77b9410cf XXE
+          rm -rf XXE/.git
+
+      - name: cujanovic's SSRF Payloads (https://github.com/cujanovic/SSRF-Testing)
+        run: |
+          rm -rf SSRF
+          git clone --depth=1 https://github.com/cujanovic/SSRF-Testing SSRF
+          rm -rf SSRF/.git
+        
+      - name: Assetnote's Blind SSRF Chains (https://github.com/assetnote/blind-ssrf-chains)
+        run: |
+          rm -rf SSRF/blind-ssrf-chains
+          git clone --depth=1 https://github.com/assetnote/blind-ssrf-chains
+          rm -rf blind-ssrf-chains/.git
+          mv blind-ssrf-chains SSRF/
+        
+      - name: cujanovic's Open Redirect Payloads (https://github.com/cujanovic/Open-Redirect-Payloads)
+        run: |
+          rm -rf Open_Redirection
+          git clone --depth=1 https://github.com/cujanovic/Open-Redirect-Payloads Open_Redirection
+          rm -rf Open_Redirection/.git
+        
+      - name: cujanovic's Markdown XSS Payloads (https://github.com/cujanovic/Markdown-XSS-Payloads)
+        run: | 
+          rm -rf XSS
+          git clone --depth=1 https://github.com/cujanovic/Markdown-XSS-Payloads XSS
+          rm -rf XSS/.git
+
+      - name: Homoglyhs
+        run: |
+          rm -rf Homoglyphs
+          mkdir Homoglyphs
+          cd Homoglyphs
+          wget https://raw.githubusercontent.com/codebox/homoglyph/master/raw_data/chars.txt
+          wget https://raw.githubusercontent.com/codebox/homoglyph/master/raw_data/char_codes.txt
+
+      - name: Unicode
+        run: |
+          rm -rf Unicode
+          mkdir Unicode
+          wget -r --no-parent -R "index.html*" https://www.unicode.org/Public/UCD/latest/ -nH
+          mv Public Unicode
+
+      - name: Add files over 100MB to .gitignore to avoid errors on pushing
+        run: |
+          rm -rf .gitignore
+          find ./* -size +100M | cat >> .gitignore
+          find ./* -size +100M | xargs rm
+          
+      - name: Config git and push
+        run: |
+          git config --global user.name "cxosmo"
+          git add -A
+          git commit -m "Update wordlists"
+          git push
