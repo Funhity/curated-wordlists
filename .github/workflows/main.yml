@@ -62,6 +62,12 @@ jobs:
           git clone --depth=1 https://github.com/cujanovic/Markdown-XSS-Payloads XSS
           rm -rf XSS/.git
 
+      - name: BlackFan's Prototype Pollution (https://github.com/BlackFan/client-side-prototype-pollution)
+        run: | 
+          rm -rf Prototype_Pollution
+          git clone --depth=1 https://github.com/BlackFan/client-side-prototype-pollution Prototype_Pollution
+          rm -rf Prototype_Pollution/.git
+          
       - name: Homoglyhs
         run: |
           rm -rf Homoglyphs
