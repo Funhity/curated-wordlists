@@ -86,6 +86,7 @@ jobs:
       - name: Config git and push
         run: |
           git config --global user.name "cxosmo"
+          git config --global user.email "cxosmo@gmail.com"
           git add -A
           git commit -m "Update wordlists"
           git push
