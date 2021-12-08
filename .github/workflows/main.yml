@@ -80,7 +80,7 @@ jobs:
         run: |
           rm -rf Unicode
           mkdir Unicode
-          wget -r --no-parent -R "index.html*,robots.txt" https://www.unicode.org/Public/UCD/latest/ -nH
+          wget -r --no-parent -R "index.html*,robots.txt,robots.txt.tmp" https://www.unicode.org/Public/UCD/latest/ -nH
           mv Public Unicode
 
       - name: Add files over 100MB to .gitignore to avoid errors on pushing
