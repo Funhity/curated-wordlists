@@ -1,0 +1,187 @@
+User-agent: *
+Disallow: /draft/	# not official even if visible
+Disallow: /Public/1.1-Update/	# obsolete data
+Disallow: /Public/2.1-Update2/	# obsolete data
+Disallow: /Public/3.0-Update/	# obsolete data
+Disallow: /Public/2.0-Update/	# obsolete data
+Disallow: /Public/2.1-Update3/	# obsolete data
+Disallow: /Public/2.1-Update/	# obsolete data
+Disallow: /Public/2.1-Update4/	# obsolete data
+Disallow: /Public/3.0-Update1/ # obsolete data
+Disallow: /Public/3.1-Update/  # obsolete data
+Disallow: /Public/3.1-Update1/ # obsolete data
+Disallow: /Public/3.2-Update/ # obsolete data
+Disallow: /Public/4.0-Update/ # obsolete data
+Disallow: /Public/4.0-Update1/ # obsolete data
+Disallow: /Public/4.1.0/	# obsolete data
+Disallow: /Public/5.0.0/	# obsolete data
+Disallow: /Public/5.1.0/	# obsolete data
+Disallow: /Public/5.2.0/	# obsolete data
+Disallow: /Public/6.0.0/	# obsolete data
+Disallow: /Public/6.1.0/	# obsolete data
+Disallow: /Public/6.2.0/	# obsolete data
+Disallow: /Public/6.3.0/	# obsolete data
+Disallow: /Public/7.0.0/	# obsolete data
+Disallow: /Public/8.0.0/	# obsolete data
+Disallow: /Public/9.0.0/	# obsolete data
+Disallow: /Public/10.0.0/	# obsolete data
+Disallow: /Public/11.0.0/	# obsolete data
+Disallow: /Public/12.0.0/	# obsolete data
+Disallow: /Public/13.0.0/	# obsolete data
+Disallow: /fr/			# obsolete pages and charts
+Disallow: /versions/Unicode2.0.0/	# obsolete version
+Disallow: /versions/Unicode2.1.0/	# obsolete version
+Disallow: /versions/Unicode3.0.0/	# obsolete version
+Disallow: /versions/Unicode3.0.1/	# obsolete version
+Disallow: /versions/Unicode3.1.0/	# obsolete version
+Disallow: /versions/Unicode3.1.1/	# obsolete version
+Disallow: /versions/Unicode3.2.0/	# obsolete version
+Disallow: /versions/Unicode4.0.0/	# obsolete version
+Disallow: /versions/Unicode4.0.1/	# obsolete version
+Disallow: /versions/Unicode4.1.0/	# obsolete version
+Disallow: /versions/Unicode5.0.0/	# obsolete version
+Disallow: /versions/Unicode5.1.0/	# obsolete version
+Disallow: /versions/Unicode5.2.0/	# obsolete version
+Disallow: /versions/Unicode6.0.0/	# obsolete version
+Disallow: /versions/Unicode6.1.0/	# obsolete version
+Disallow: /versions/Unicode6.2.0/	# obsolete version
+Disallow: /versions/Unicode6.3.0/	# obsolete version
+Disallow: /versions/Unicode7.0.0/	# obsolete version
+Disallow: /versions/Unicode8.0.0/	# obsolete version
+Disallow: /versions/Unicode9.0.0/	# obsolete version
+Disallow: /versions/Unicode10.0.0/	# obsolete version
+Disallow: /versions/Unicode11.0.0/	# obsolete version
+Disallow: /versions/Unicode12.0.0/	# obsolete version
+Disallow: /charts/PDF/Unicode-3.1	# obsolete version
+Disallow: /charts/PDF/Unicode-3.2	# obsolete version
+Disallow: /charts/PDF/Unicode-4.0	# obsolete version
+Disallow: /charts/PDF/Unicode-4.1	# obsolete version
+Disallow: /charts/PDF/Unicode-5.0	# obsolete version
+Disallow: /charts/PDF/Unicode-5.1	# obsolete version
+Disallow: /charts/PDF/Unicode-5.2	# obsolete version
+Disallow: /charts/PDF/Unicode-6.0	# obsolete version
+Disallow: /charts/PDF/Unicode-6.1	# obsolete version
+Disallow: /charts/PDF/Unicode-6.2	# obsolete version
+Disallow: /charts/PDF/Unicode-6.3	# obsolete version
+Disallow: /charts/PDF/Unicode-7.0	# obsolete version
+Disallow: /charts/PDF/Unicode-8.0	# obsolete version
+Disallow: /charts/PDF/Unicode-9.0	# obsolete version
+Disallow: /charts/PDF/Unicode-10.0	# obsolete version
+Disallow: /charts/PDF/Unicode-11.0	# obsolete version
+Disallow: /charts/PDF/Unicode-12.0	# obsolete version
+Disallow: /charts/PDF/Unicode-13.0	# obsolete version
+Disallow: /reports/tr1.html	# obsolete TR
+Disallow: /reports/tr2.html	# obsolete TR
+Disallow: /reports/tr3.html	# obsolete TR
+Disallow: /reports/tr1/	# obsolete TR
+Disallow: /reports/tr2/	# obsolete TR
+Disallow: /reports/tr3/	# obsolete TR
+Disallow: /reports/tr7/	# obsolete TR
+Disallow: /reports/tr12/	# obsolete TR
+Disallow: /reports/tr13/	# obsolete TR
+Disallow: /reports/tr19/	# obsolete TR
+Disallow: /reports/tr21/	# obsolete TR
+Disallow: /reports/tr30/	# obsolete TR
+Disallow: /reports/tr32/	# obsolete TR
+Disallow: /reports/tr40/	# obsolete TR
+Disallow: /reports/tr47/	# obsolete TR
+Disallow: /reports/tr49/	# obsolete TR
+Disallow: /reports/tr52/	# obsolete TR
+Disallow: /anon-ftp/	# same as Public, different path
+Disallow: /Public/MAPPINGS/OBSOLETE/ # obsolete data
+Disallow: /unicode/members/
+Disallow: /members/
+Disallow: /repository/	# dynamic
+Disallow: /cldr/repository/	# dynamic
+Disallow: /cldr/utility/	# dynamic
+Disallow: /cgi-bin/	# dynamic
+Disallow: /cldr/data/diff/	# dynamic
+Disallow: /cldr/trac/	# dynamic
+Disallow: /edcom/bugtrack/	# dynamic
+Disallow: /uli/trac/	# dynamic
+Disallow: /~srloomis/ut/trac/	#dynamic
+Disallow: /repos/	# dynamic
+Disallow: /repos/cldr-tmp/	# dynamic
+Disallow: /utility/trac/	# dynamic
+Disallow: /utility/	# dynamic
+Disallow: /forum/	# dynamic
+Disallow: /forum/viewtopic.php	# dynamic, discontinued
+Allow: /cldr/data/common/
+Allow: /cldr/data/docs/
+Allow: /cldr/data/tools/
+Disallow: /cldr/data/   # everything else
+Disallow: /cldr/dropbox/	# not really public
+Disallow: /~ecartis	# not really public
+Disallow: /unibook/oldversions/	# obsolete data
+Disallow: /reports/tr46/tr46-4.html
+Disallow: /reports/tr46/tr46-3.html
+Disallow: /reports/tr46/tr46-2.html
+Disallow: /reports/tr46/tr46-1.html
+Disallow: /reports/tr15/tr15-24.html
+Disallow: /reports/tr15/tr15-23.html
+Disallow: /reports/tr15/tr15-31.html
+Disallow: /reports/tr14/tr14-15.html
+Disallow: /reports/dtr14-03.html
+Disallow: /reports/tr14-4/index.html
+Disallow: /reports/tr14-5/index.html
+Disallow: /reports/tr9/tr9-21.html
+Disallow: /reports/tr51/tr51-1.html
+Disallow: /reports/tr51/tr51-1-archive.html
+Disallow: /reports/tr51/tr51-2.html
+Disallow: /reports/tr34/tr34-1.html
+Disallow: /reports/tr34/tr34-2.html
+Disallow: /reports/tr34/tr34-3.html
+Disallow: /reports/tr34/tr34-4.html
+Disallow: /reports/tr34/tr34-5.html
+Disallow: /reports/tr34/tr34-6.html
+Disallow: /reports/tr34/tr34-7.html
+Disallow: /reports/tr34/tr34-8.html
+Disallow: /reports/tr34/tr34-9.html
+Disallow: /reports/tr34/tr34-10.html
+Disallow: /reports/tr34/tr34-11.html
+Disallow: /reports/tr34/tr34-12.html
+Disallow: /reports/tr34/tr34-13.html
+Disallow: /reports/tr34/tr34-14.html
+Disallow: /reports/tr34/tr34-15.html
+Disallow: /reports/tr34/tr34-16.html
+Disallow: /reports/tr34/tr34-17.html
+Disallow: /reports/tr34/tr34-18.html
+Disallow: /reports/tr25/tr25-1.html
+Disallow: /reports/tr25/tr25-2.html
+Disallow: /reports/tr25/tr25-3.html
+Disallow: /reports/tr25/tr25-4.html
+Disallow: /reports/tr25/tr25-5.html
+Disallow: /reports/tr25/tr25-6.html
+Disallow: /reports/tr25/tr25-7.html
+Disallow: /reports/tr25/tr25-8.html
+Disallow: /reports/tr25/tr25-9.html
+Disallow: /reports/tr25/tr25-10.pdf
+Disallow: /reports/tr25/tr25-11.pdf
+Disallow: /reports/tr25/tr25-12.pdf
+Disallow: /reports/tr25/tr25-13.pdf
+Disallow: /reports/tr25/tr25-14.pdf
+User-Agent: AhrefsBot
+Crawl-Delay: 60
+User-Agent: Baiduspider
+Crawl-Delay: 60
+User-agent: CCBot
+Crawl-Delay: 60
+User-agent: Gigabot
+Disallow: /
+User-agent: betaBot
+Disallow: /
+User-agent: CCBot
+Crawl-Delay: 60
+User-agent: AhrefsBot
+Crawl-Delay: 60 
+User-agent: dotbot
+Crawl-Delay: 60 
+User-agent: MJ12bot
+Crawl-Delay: 60 
+User-agent: msnbot
+Crawl-delay: 60
+User-agent: BLEXBot
+Crawl-delay: 60
+User-agent: SeznamBot
+Request-rate: 1/1m
+Crawl-delay: 60
